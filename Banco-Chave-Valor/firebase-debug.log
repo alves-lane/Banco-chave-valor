@@ -1,0 +1,64 @@
+[debug] [2026-10-30T19:58:29.987Z] ----------------------------------------------------------------------
+[debug] [2026-10-30T19:58:29.990Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Laian\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2026-10-30T19:58:29.990Z] CLI Version:   15.34.1
+[debug] [2026-10-30T19:58:29.991Z] Platform:      win32
+[debug] [2026-10-30T19:58:29.991Z] Node Version:  v24.22.1
+[debug] [2026-10-30T19:58:29.991Z] Detected Agent: unknown
+[debug] [2026-10-30T19:58:29.991Z] Time:          Fri Oct 30 2026 16:58:29 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2026-10-30T19:58:29.991Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-30T19:58:31.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-30T19:58:31.759Z] > authorizing via signed-in user (laianelalves@gmail.com)
+[debug] [2026-10-30T19:58:32.029Z] openjdk version "21.0.12.1" 2026-08-18 LTS
+
+[debug] [2026-10-30T19:58:32.030Z] OpenJDK Runtime Environment Microsoft-14941484 (build 21.0.12.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14941484 (build 21.0.12.1+1-LTS, mixed mode, sharing)
+
+[debug] [2026-10-30T19:58:32.065Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database"}}
+[debug] [2026-10-30T19:58:32.081Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-30T19:58:32.081Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-30T19:58:32.081Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-10-30T19:58:32.088Z] Write emulator hub locator at C:\Users\Laian\AppData\Local\Temp\hub-banco-chave-valor-42242.json
+[debug] [2026-10-30T19:58:32.099Z] Checked if tokens are valid: true, expires at: 1793393885725
+[debug] [2026-10-30T19:58:32.099Z] Checked if tokens are valid: true, expires at: 1793393885725
+[debug] [2026-10-30T19:58:32.101Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/banco-chave-valor-42242 [none]
+[debug] [2026-10-30T19:58:32.686Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/banco-chave-valor-42242 200
+[debug] [2026-10-30T19:58:32.686Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/banco-chave-valor-42242 {"projectId":"banco-chave-valor-42242","projectNumber":"91698704091","displayName":"Banco-Chave-Valor","name":"projects/banco-chave-valor-42242","resources":{"hostingSite":"banco-chave-valor-42242","realtimeDatabaseInstance":"banco-chave-valor-42242-default-rtdb"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_8d6744a7-0518-43dc-89fc-f66d32965dff"}
+[debug] [2026-10-30T19:58:32.686Z] database rules config:  []
+[warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2026-10-30T19:58:32.709Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2026-10-30T19:58:32.709Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-10-30T19:58:32.709Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2026-10-30T19:58:32.709Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Laian\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning"],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9000} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Laian\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\"],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9000}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2026-10-30T19:58:34.569Z] 16:58:34.568 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"16:58:34.568 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\r\n"}}
+[debug] [2026-10-30T19:58:34.858Z] 16:58:34.854 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"16:58:34.854 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000\r\n"}}
+[debug] [2026-10-30T19:58:35.045Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┬────────────────────────────────┐
+│ Emulator │ Host:Port      │ View in Emulator UI            │
+├──────────┼────────────────┼────────────────────────────────┤
+│ Database │ 127.0.0.1:9000 │ http://127.0.0.1:4000/database │
+└──────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-10-30T19:58:51.122Z] 16:58:51.119 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - banco-chave-valor-42242 successfully activated FBKV (SurveyIdle(0)) wait: 646ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"16:58:51.119 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - banco-chave-valor-42242 successfully activated FBKV (SurveyIdle(0)) wait: 646ms, init: 0ms\r\n"}}
+[debug] [2026-10-30T19:59:03.773Z] 16:59:03.773 [FirebaseWorkerPool-1-1] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested 
+namespace meu-projeto, but the emulator is configured for banco-chave-valor-42242. To 
+opt-out of single project mode add/set the singleProjectMode: false property in 
+the firebase.json emulators config. 
+ {"metadata":{"emulator":{"name":"database"},"message":"16:59:03.773 [FirebaseWorkerPool-1-1] WARN com.firebase.core.persistence.backend.dummy.EmulatorMetadataPersistence - Multiple projectIds are not recommended in single project mode. Requested \nnamespace meu-projeto, but the emulator is configured for banco-chave-valor-42242. To \nopt-out of single project mode add/set the singleProjectMode: false property in \nthe firebase.json emulators config. \r\n"}}
+[debug] [2026-10-30T19:59:03.782Z] 16:59:03.783 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - meu-projeto successfully activated FBKV (SurveyIdle(0)) wait: 4ms, init: 0ms
+ {"metadata":{"emulator":{"name":"database"},"message":"16:59:03.783 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - meu-projeto successfully activated FBKV (SurveyIdle(0)) wait: 4ms, init: 0ms\r\n"}}
